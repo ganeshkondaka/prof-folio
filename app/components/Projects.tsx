@@ -19,7 +19,7 @@ export default function Projects() {
                 // [...Array(4)].map((_, index) => (
                     <div
                         key={index}
-                        className="w-full rounded-2xl bg-black p-4 border border-zinc-800 flex flex-col justify-between"
+                        className="w-full rounded-2xl bg-black p-4 border border-zinc-800 flex flex-col justify-between shadow-lg hover:scale-105 hover:bg-zinc-900 transition duration-300 ease-in-out"
                     >
                         <img
                             src={item.image}
@@ -38,10 +38,10 @@ export default function Projects() {
                             )}
                         </div>
                         <div className="flex space-x-2 p-2">
-                            <Link href={item.href} className="rounded bg-white px-3 py-1 text-xs text-black flex items-center gap-1 hover:bg-zinc-400">
+                            <Link href={item.href} className="rounded bg-white px-3 py-1 text-xs text-black flex items-center gap-1 hover:bg-zinc-500 trasition">
                                 <BiGlobe /> Link
                             </Link>
-                            <Link href={item.repo} className="rounded bg-white px-3 py-1 text-xs text-black flex items-center gap-1 hover:bg-zinc-400">
+                            <Link href={item.repo} className="rounded bg-white px-3 py-1 text-xs text-black flex items-center gap-1 hover:bg-zinc-500">
                                 <BsGithub /> Source
                             </Link>
                         </div>
