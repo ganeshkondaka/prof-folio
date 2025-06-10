@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Skills() {
 
-    const skills_list: string[] = ["Nextjs", "Typescript", "React", "TailwindCSS", "Prisma-ORM", "Docker", "Expressjs", "MongoDB", "Nodejs", "Redis", "Javascript", "Git", "Github", "Cloudflare", "Python", "Machine learning", "Tensorflow", "Pandas", "Keras"]
+    const skills_list: string[] = ["Nextjs", "Typescript", "React", "TailwindCSS", "Prisma-ORM", "Docker", "Expressjs", "MongoDB", "Nodejs", "Redis", "Javascript", "Git", "Github", "AWS", "Python", "Machine learning", "Tensorflow", "Pandas", "Keras"]
 
     return (
-        <div className='inline px-4 py-2'>
+        <div className='w-full px-4 py-2'>
             <p className='text-2xl pb-3 font-bold my-2'>Skills</p>
             {
                 skills_list.map((item, index) => (

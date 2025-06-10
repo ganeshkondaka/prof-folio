@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Workexp from "./components/Workexp";
 import Footer from "./components/Footer";
 import GitHubCalendar from "react-github-calendar";
+import AnimatedSection from "./components/AnimatedSection";
 
 export default function Home() {
   return (
@@ -16,20 +17,35 @@ export default function Home() {
       </div>
       <div className="overflow-hidden flex justify-center md:mx-64 items-center">
         <div className="z-10 flex flex-col justify-center items-center">
-          <Profile ></Profile>
-          <div className="dark hidden xl:block pt-4">
-            <GitHubCalendar username="ganeshkondaka" colorScheme="dark"/>
-          </div>
-          <About></About>
-          <Skills></Skills>
-          <Learning></Learning>
-          <Workexp></Workexp>
-          <Projects></Projects>
-          <Footer></Footer>
+          <AnimatedSection>
+            <Profile />
+          </AnimatedSection>
+          <AnimatedSection>
+            <div className="dark hidden xl:block pt-4">
+              <GitHubCalendar username="ganeshkondaka" colorScheme="dark" />
+            </div>
+          </AnimatedSection>
+          <AnimatedSection>
+            <About />
+          </AnimatedSection>
+          <AnimatedSection>
+            <Skills />
+          </AnimatedSection>
+          <AnimatedSection>
+            <Learning />
+          </AnimatedSection>
+          <AnimatedSection>
+            <Workexp />
+          </AnimatedSection>
+          <AnimatedSection>
+            <Projects />
+          </AnimatedSection>
+          <AnimatedSection>
+            <Footer />
+          </AnimatedSection>
         </div>
-        <DotPattern ></DotPattern>
+        <DotPattern />
       </div>
     </div>
-
   );
 }
