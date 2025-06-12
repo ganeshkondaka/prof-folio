@@ -13,7 +13,7 @@ export default function Projects() {
                 I've worked on a variety of projects, from simple websites to complex
                 web applications. Here are a few of my favorites.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:mx-32 w-full max-w-3xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:mx-32 w-full max-w-3xl">
                 {
                     project_list.map((item, index) => (
                 // [...Array(4)].map((_, index) => (

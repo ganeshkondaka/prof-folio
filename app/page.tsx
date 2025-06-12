@@ -16,12 +16,12 @@ export default function Home() {
         <DotPattern className="w-full h-full" />
       </div>
       <div className="overflow-hidden flex justify-center md:mx-64 items-center">
-        <div className="z-10 flex flex-col justify-center items-center">
+        <div className="z-10 flex flex-col justify-center items-center w-full">
           <AnimatedSection>
             <Profile />
           </AnimatedSection>
           <AnimatedSection>
-            <div className="dark hidden xl:block pt-4">
+            <div className="dark hidden xl:flex pt-4 w-full justify-center">
               <GitHubCalendar username="ganeshkondaka" colorScheme="dark" />
             </div>
           </AnimatedSection>

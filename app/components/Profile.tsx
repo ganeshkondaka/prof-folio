@@ -61,7 +61,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className='w-auto'>
-                <Image src="/ganesh.png" alt="Ganesh" width={150} height={150} className='aspect-square rounded-3xl  hover:scale-110 translate duration-200 ease-in-out hover:rotate-3' />
+                <Image src="/ganesh.png" alt="Ganesh" width={150} height={150} className='aspect-square rounded-3xl  hover:scale-110 translate duration-200 ease-in-out hover:rotate-6' />
             </div>
         </div>
     )
