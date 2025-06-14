@@ -4,6 +4,7 @@ export interface projects_d {
     repo: string;
     description: string;
     image: string;
+    bg_color:string;
     technologies: string[];
 }
 
@@ -16,6 +17,7 @@ export const project_list: projects_d[] = [
                       and project name suggestions. Built using Next.js, Tailwind CSS, and 
                       Google Gemini API. Features a sleek dark UI with vibrant gradients.`,
         image: '/aicontent.png',
+        bg_color: 'hover:bg-[#061036]',
         technologies: ['Next.js', 'Tailwind CSS', 'Prisma-ORM', 'Postgresql', 'Gemini API', 'TypeScript', 'Clerk']
     },
     {
@@ -26,6 +28,7 @@ export const project_list: projects_d[] = [
                       share, and explore insightful "Gyan Cards." Built with a minimal UI 
                       using React and Tailwind CSS. Supports markdown-based content sharing.`,
         image: '/gyancard.png',
+        bg_color: 'hover:bg-[#063611]',
         technologies: ['React', 'Tailwind CSS', 'TypeScript', 'Prisma-ORM', 'Postgresql']
     },
     {
@@ -37,6 +40,7 @@ export const project_list: projects_d[] = [
                     and integrated with payment gateways and location- based APIs.
                     Features a sleek and user - friendly interface with responsive design.`,
         image: '/eventhive2.png',
+        bg_color: 'hover:bg-zinc-800',
         technologies: ['Next.js', 'Tailwind CSS', 'MongoDB', 'JWT', 'Payment Gateway', 'TypeScript']
     },
     {
@@ -47,6 +51,7 @@ export const project_list: projects_d[] = [
                       post creation, and rich text editing. Developed using TypeScript, 
                       Prisma, and a monorepo structure. Optimized for fast content delivery.`,
         image: '/xblogimg.png',
+        bg_color: 'hover:bg-[#340636]',
         technologies: ['Hono', 'Tailwind CSS', 'React.js', 'Prisma', 'Postgresql', 'TypeScript']
     },
     {
@@ -57,6 +62,7 @@ export const project_list: projects_d[] = [
                       Supports private and group chats with a responsive UI. Built using 
                       the MERN stack with MongoDB for message storage.`,
         image: '/chatapp.png',
+        bg_color: 'hover:bg-[#360606]',
         technologies: ['React', 'Express.js', 'MongoDB', 'Node.js', 'Socket.io', 'JWT']
     },
     {
@@ -67,6 +73,7 @@ export const project_list: projects_d[] = [
                         all your social media accounts in one place. Create a profile and share
                         a single link that connects everyone to all your platforms..`,
         image: 'socnet.png',
+        bg_color: 'hover:bg-zinc-800',
         technologies: ['React', 'Tailwind CSS', 'MongoDB', 'JavaScript', 'Express']
     },
     {
@@ -77,6 +84,7 @@ export const project_list: projects_d[] = [
                       Designed with a modern and clean UI using TypeScript and Next.js. 
                       Includes interactive elements and a smooth navigation experience.`,
         image: '/gttheme.png',
+        bg_color: 'hover:bg-zinc-800',
         technologies: ['Next.js', 'TypeScript', 'Tailwind CSS']
     },
     // {

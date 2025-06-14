@@ -19,7 +19,7 @@ export default function Projects() {
                 // [...Array(4)].map((_, index) => (
                     <div
                         key={index}
-                        className="w-full rounded-2xl bg-black p-4 border border-zinc-800 flex flex-col justify-between shadow-lg hover:scale-105 hover:bg-zinc-900 transition duration-300 ease-in-out"
+                        className={`w-full rounded-2xl bg-black p-4 border border-zinc-800 flex flex-col justify-between shadow-lg hover:scale-105 ${item.bg_color} transition duration-300 ease-in-out`}
                     >
                         <img
                             src={item.image}

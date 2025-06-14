@@ -8,12 +8,13 @@ import { BiEnvelope } from 'react-icons/bi'
 import { BsLinkedin, BsTwitterX } from 'react-icons/bs'
 import { CgSpinner } from 'react-icons/cg'
 import { FaGithub } from 'react-icons/fa'
+import { motion } from 'motion/react'
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export default function Profile() {
     return (
-        <div className='flex flex-row justify-center items-center px-4 pt-8 pb-5 xl:pb-4 md:py-14 max-w-5xl w-auto'>
+        <div className='[perpective:1000px] [transform-style:preserve-3d] flex flex-row justify-center items-center px-4 pt-8 pb-5 xl:pb-4 md:py-14 max-w-5xl w-auto'>
             <div className='w-80 md:w-auto'>
                 <h2 className='text-2xl font-bold md:text-6xl px-2'>Hi,I'm Ganesh 👋</h2>
                 <p className='text-zinc-300 text-sm md:text-xl p-2'>A Fullstack dev , Blending Web dev and AI, and open source to build, break, and innovate!</p>
@@ -60,9 +61,43 @@ export default function Profile() {
                     </div>
                 </div>
             </div>
-            <div className='w-auto'>
-                <Image src="/ganesh.png" alt="Ganesh" width={150} height={150} className='aspect-square rounded-3xl  hover:scale-110 translate duration-200 ease-in-out hover:rotate-6' />
-            </div>
+            <motion.div
+                className='w-auto rounded-3xl overflow-hidden'
+                initial={{ rotate: -5, y: 0, boxShadow: "0px 0px 0px 0px #00ffcc" }}
+                animate={{
+                    rotate: [-5, 5, -5],
+                    y: [0, -10, 0],
+                    boxShadow: [
+                        "0px 0px 0px 0px #00ffcc",
+                        "0px 8px 32px 0px #00ffcc88",
+                        "0px 0px 0px 0px #00ffcc"
+                    ]
+                }}
+                transition={{
+                    rotate: { repeat: Infinity, duration: 3, ease: "easeInOut" },
+                    y: { repeat: Infinity, duration: 3, ease: "easeInOut" },
+                    boxShadow: { repeat: Infinity, duration: 3, ease: "easeInOut" }
+                }}
+                whileHover={{
+                    scale: 1.12,
+                    rotate: 0,
+                    boxShadow: "0px 12px 48px 0px #00ffcc"
+                }}
+                whileTap={{
+                    scale: 0.95
+                }}
+                style={{
+                    translateZ: 100,
+                }}
+            >
+                <Image
+                    src="/ganesh.png"
+                    alt="Ganesh"
+                    width={150}
+                    height={150}
+                    className='aspect-square rounded-3xl translate duration-200 ease-in-out'
+                />
+            </motion.div>
         </div>
     )
 }
