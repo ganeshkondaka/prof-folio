@@ -29,7 +29,7 @@ export default function Workexp() {
                 <p className='text-zinc-400 text-xs sm:text-sm'>Present</p>
             </div>
 
-            <div className='flex flex-row items-center w-full justify-between md:px-10 bg-zinc-950 text-white p-2 rounded-xl border border-zinc-700 h-24'>
+            {/* <div className='flex flex-row items-center w-full justify-between md:px-10 bg-zinc-950 text-white p-2 rounded-xl border border-zinc-700 h-24'>
                 <div className='flex flex-row items-center space-x-3 md:space-x-6 '>
                     <img src="/githublogo.png" alt="college logo" className='w-14 h-14 rounded-full' />
                     <div>
@@ -39,7 +39,7 @@ export default function Workexp() {
 
                 </div>
                 <p className='text-zinc-400 text-xs sm:text-sm'>Present</p>
-            </div>
+            </div> */}
 
             <div className='flex flex-row items-center w-full justify-between md:px-10 bg-zinc-950 text-white p-2 rounded-xl border border-zinc-700 h-24'>
                 <div className='flex flex-row items-center space-x-3 md:space-x-6 '>

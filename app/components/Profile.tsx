@@ -61,43 +61,10 @@ export default function Profile() {
                     </div>
                 </div>
             </div>
-            <motion.div
-                className='w-auto rounded-3xl overflow-hidden'
-                initial={{ rotate: -5, y: 0, boxShadow: "0px 0px 0px 0px #00ffcc" }}
-                animate={{
-                    rotate: [-5, 5, -5],
-                    y: [0, -10, 0],
-                    boxShadow: [
-                        "0px 0px 0px 0px #00ffcc",
-                        "0px 8px 32px 0px #00ffcc88",
-                        "0px 0px 0px 0px #00ffcc"
-                    ]
-                }}
-                transition={{
-                    rotate: { repeat: Infinity, duration: 3, ease: "easeInOut" },
-                    y: { repeat: Infinity, duration: 3, ease: "easeInOut" },
-                    boxShadow: { repeat: Infinity, duration: 3, ease: "easeInOut" }
-                }}
-                whileHover={{
-                    scale: 1.12,
-                    rotate: 0,
-                    boxShadow: "0px 12px 48px 0px #00ffcc"
-                }}
-                whileTap={{
-                    scale: 0.95
-                }}
-                style={{
-                    translateZ: 100,
-                }}
-            >
-                <Image
-                    src="/ganesh.png"
-                    alt="Ganesh"
-                    width={150}
-                    height={150}
-                    className='aspect-square rounded-3xl translate duration-200 ease-in-out'
-                />
-            </motion.div>
+            <div className='w-auto'>
+                <Image src="/ganesh.png" alt="Ganesh" width={150} height={150} className='aspect-square rounded-3xl  hover:scale-110 translate duration-200 ease-in-out hover:rotate-6' />
+            </div>
+
         </div>
     )
 }
