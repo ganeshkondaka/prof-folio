@@ -9,7 +9,7 @@ export default function Skills() {
             <p className='text-2xl pb-3 font-bold my-2'>Skills</p>
             {
                 skills_list.map((item, index) => (
-                    <div key={index} className=" items-center inline-flex text-[12px] text-black font-bold  px-2 py-1 border-2 bg-white rounded-lg hover:bg-green-500 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                    <div key={index} className=" items-center inline-flex text-[12px] text-black font-bold  px-2 py-1 border-2 bg-white rounded-lg hover:bg-blue-500 hover:text-white transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                         {item}
                     </div>
                 ))

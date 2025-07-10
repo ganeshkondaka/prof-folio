@@ -54,7 +54,7 @@ export default function Profile() {
                     <div>
                         <a href="/resume.pdf"
                             download
-                            className="px-4 py-3 mt-2 inline-block border border-zinc-600 text-white font-semibold rounded-lg hover:bg-green-900  lg:mr-16 text-[10px] hover:scale-110 translate duration-200 ease-in-out">
+                            className="px-4 py-3 mt-2 inline-block border border-zinc-600 text-white font-semibold rounded-lg hover:bg-blue-900  lg:mr-16 text-[10px] hover:scale-110 translate duration-200 ease-in-out">
                             <Download className="inline mr-2" size={16} />
                             Download Resume
                         </a>
@@ -62,7 +62,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className='w-auto'>
-                <Image src="/ganesh.png" alt="Ganesh" width={150} height={150} className='aspect-square rounded-3xl  hover:scale-110 translate duration-200 ease-in-out hover:rotate-6' />
+                <Image src="/ganesh2.png" alt="Ganesh" width={150} height={150} className='aspect-square rounded-3xl  hover:scale-110 translate duration-200 ease-in-out hover:rotate-6' />
             </div>
 
         </div>

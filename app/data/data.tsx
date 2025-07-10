@@ -4,8 +4,14 @@ export interface projects_d {
     repo: string;
     description: string;
     image: string;
-    bg_color:string;
+    bg_color: string;
     technologies: string[];
+}
+export interface EXP{
+    role: string;
+    company: string;
+    logo: string;
+    date: string;
 }
 
 export const project_list: projects_d[] = [
@@ -118,3 +124,22 @@ export const project_list: projects_d[] = [
     //     technologies: ['Python', 'Streamlit', 'Scikit-learn', 'NLP']
     // }
 ];
+
+export const exp_list: EXP[] = [
+    {
+        role: "Full Stack Developer",
+        company: "Nearsite",
+        logo: "/nearsite.png",
+        date: "Present"
+    }, {
+        role: "Freelancer",
+        company: "Full Stack Developer",
+        logo: "/freelance2.png",
+        date: "Present"
+    }, {
+        role: "AI/ML Intern",
+        company: "SmartBridge",
+        logo: "/internship.png",
+        date: "2023-2024"
+    }
+]
