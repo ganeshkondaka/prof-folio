@@ -22,11 +22,11 @@ export default function Home() {
           <AnimatedSection>
             <Profile />
           </AnimatedSection>
-          <AnimatedSection>
+          {/* <AnimatedSection>
             <div className="dark hidden xl:flex pt-4 w-full justify-center">
               <GitHubCalendar username="ganeshkondaka" colorScheme="dark" />
             </div>
-          </AnimatedSection>
+          </AnimatedSection> */}
           <AnimatedSection>
             <About />
           </AnimatedSection>
