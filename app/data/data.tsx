@@ -135,7 +135,7 @@ export const exp_list: EXP[] = [
         role: "Freelancer",
         company: "Full Stack Developer",
         logo: "/freelance2.png",
-        date: "Present"
+        date: " "
     }, {
         role: "AI/ML Intern",
         company: "SmartBridge",

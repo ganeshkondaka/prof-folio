@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Skills() {
 
-    const skills_list: string[] = ["Nextjs", "Typescript", "React", "TailwindCSS", "Prisma-ORM", "Docker", "Expressjs", "MongoDB", "Nodejs", "Redis", "Javascript", "Git", "Github", "AWS", "Python", "Machine learning", "Tensorflow", "Pandas", "Keras"]
+    const skills_list: string[] = ["Nextjs", "Typescript", "React", "TailwindCSS", "Prisma-ORM", "Docker*", "Expressjs", "MongoDB", "Nodejs", "Redis*", "Javascript", "Git", "AWS*", "Python", "GenAI*", "LangChain*", "StreamLit*", "Pandas", "Numpy", "Tensorflow"]
 
     return (
         <div className='w-full px-4 py-2'>
