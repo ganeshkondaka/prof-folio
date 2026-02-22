@@ -29,13 +29,6 @@ export default function Profile() {
 
                             </DockIcon>
                             <DockIcon className="bg-black/10 dark:bg-white/10">
-                                {/* <Icons.googleDrive className="size-full" /> */}
-                                <Link className="size-full" href="https://x.com/ganesh_kondaka">
-                                    <BsTwitterX className="size-full"></BsTwitterX>
-                                </Link>
-
-                            </DockIcon>
-                            <DockIcon className="bg-black/10 dark:bg-white/10">
                                 {/* <Icons.notion className="size-full" /> */}
                                 <Link className="size-full" href="https://www.linkedin.com/in/kondaka-ganesh-b402bb252/">
                                     <BsLinkedin className="size-full"></BsLinkedin>
